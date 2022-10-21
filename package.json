@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "json"
+    "test": "echo \"Error: Should run test with command npm run testpush\" && exit 1",
+    "testpush": "git add . && git commit -m \"TDD iteration\" && git push && jest"
   },
   "repository": {
     "type": "git",
