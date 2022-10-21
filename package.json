@@ -1,0 +1,22 @@
+{
+  "name": "tp-3-pooii",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BautiColombres/TP-3-POOII.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BautiColombres/TP-3-POOII/issues"
+  },
+  "homepage": "https://github.com/BautiColombres/TP-3-POOII#readme",
+  "devDependencies": {
+    "jest": "^29.2.1"
+  }
+}
