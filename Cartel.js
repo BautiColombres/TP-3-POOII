@@ -11,6 +11,8 @@ function Cartel(){
     this.cuantasEncendidas=function(){
         return 0;
     }
+    this.encenderLuces=function(){
+    }
 }
 
 module.exports = Cartel;
