@@ -40,7 +40,13 @@ function Cartel(){
         }
     }
     this.cambiarLuces=function(inicial,final){
-        
+        for(var i=inicial[0];i<=final[0];i++){
+            for(var j=inicial[1];j<=final[1];j++){
+                if(this.matriz[i][j].estadoActual()=="apagada"){
+                    this.matriz[i][j].encender();
+                }
+            }
+        }
     }
 }
 
