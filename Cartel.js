@@ -1,4 +1,4 @@
-const Luz= require('./../Luz');
+const Luz= require('./Luz');
 
 function Cartel(){
     this.matriz=[];
