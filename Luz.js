@@ -7,9 +7,7 @@ function Luz(){
         this.estado++;
     }
     this.apagar=function(){
-        if (this.estado==1){
-            this.estado=0;
-        }
+        this.estado--;
     }
 }
 
