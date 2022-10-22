@@ -19,3 +19,7 @@ test("crear cartel",()=>{
     expect(contadorColumnas).toBe(100);
     expect(contadorLuces).toBe(10000);
 });
+test("cuantas luces hay encendidas",()=>{
+    const cartel=new Cartel();
+    expect(cartel.cuantasEncendidas()).toBe(0);
+});
