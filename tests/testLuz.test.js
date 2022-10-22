@@ -9,7 +9,7 @@ test("crear luz apagada",()=>{
 });
 test("encender luz",()=>{
     luz.encender();
-    expect(luz.estadoActual()).toBe("encendida");
+    expect(luz.estadoActual()).toBe(1);
 });
 test("apagar luz",()=>{
     luz.encender();
