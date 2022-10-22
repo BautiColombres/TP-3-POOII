@@ -14,7 +14,9 @@ function Luz(){
         }
     }
     this.apagar=function(){
-        
+        if (this.estado==1){
+            this.estado=0;
+        }
     }
 }
 
