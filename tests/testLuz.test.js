@@ -11,6 +11,7 @@ test("encender luz",()=>{
 });
 test("encender luz",()=>{
     const luz=new Luz();
+    luz.encender();
     luz.apagar();
     expect(luz.estadoActual()).toBe("apagada");
 });

@@ -13,6 +13,9 @@ function Luz(){
             this.estado=1;
         }
     }
+    this.apagar=function(){
+        
+    }
 }
 
 module.exports = Luz;
