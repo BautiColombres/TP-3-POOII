@@ -2,5 +2,5 @@ const Cartel= require('./../Cartel');
 
 test("crear cartel",()=>{
     const cartel=new Cartel();
-    expect(length(cartel.matriz)).toBe(100);
+    expect(cartel.matriz.lenght).toBe(100);
 });
