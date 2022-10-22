@@ -39,4 +39,6 @@ test("apagar posiciones deseadas",()=>{
 test("alternar posiciones deseadas",()=>{
     cartel.cambiarLuces([0,0],[2,2]);
     expect(cartel.cuantasEncendidas()).toBe(9);
+    cartel.cambiarLuces([0,0],[2,2]);
+    expect(cartel.cuantasEncendidas()).toBe(0);
 });
