@@ -10,6 +10,9 @@ function Luz(){
         this.estado++;
     }
     this.apagar=function(){
+        if(this.estado==0){
+            throw new Error("La intensidad no puede ser menor que 0");
+        }
         this.estado--;
     }
 }
