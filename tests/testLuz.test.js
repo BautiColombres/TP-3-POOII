@@ -1,4 +1,4 @@
-const Luz= require('./Luz');
+const Luz= require('./../Luz');
 
 test("crear luz apagada",()=>{
     const luz=new Luz();
