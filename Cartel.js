@@ -1,3 +1,5 @@
+const Luz= require('./../Luz');
+
 function Cartel(){
     this.matriz=[];
     for(var i=0;i<100;i++){
