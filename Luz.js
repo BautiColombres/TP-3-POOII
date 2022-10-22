@@ -1,7 +1,7 @@
 function Luz(){
     
     this.estadoActual=function(){
-
+        return "apagada";
     }
 }
 
