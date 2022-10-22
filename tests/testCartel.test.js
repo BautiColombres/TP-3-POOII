@@ -1,4 +1,5 @@
 const Cartel= require('./../Cartel');
+const Luz= require('./../Luz');
 
 test("crear cartel",()=>{
     const cartel=new Cartel();
