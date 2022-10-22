@@ -45,6 +45,9 @@ function Cartel(){
                 if(this.matriz[i][j].estadoActual()=="apagada"){
                     this.matriz[i][j].encender();
                 }
+                else if(this.matriz[i][j].estadoActual()=="encendida"){
+                    this.matriz[i][j].apagar();
+                }
             }
         }
     }
