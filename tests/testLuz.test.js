@@ -9,3 +9,8 @@ test("encender luz",()=>{
     luz.encender();
     expect(luz.estadoActual()).toBe("encendida");
 });
+test("encender luz",()=>{
+    const luz=new Luz();
+    luz.apagar();
+    expect(luz.estadoActual()).toBe("apagada");
+});
