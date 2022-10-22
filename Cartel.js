@@ -39,6 +39,9 @@ function Cartel(){
             }
         }
     }
+    this.cambiarLuces=function(inicial,final){
+        
+    }
 }
 
 module.exports = Cartel;
