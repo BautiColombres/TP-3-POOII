@@ -16,3 +16,6 @@ test("apagar luz",()=>{
     luz.apagar();
     expect(luz.estadoActual()).toBe("apagada");
 });
+test("intensidad de la luz",()=>{
+    expect(luz.estadoActual()).toBe(0);
+});
