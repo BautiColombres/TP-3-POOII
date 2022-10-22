@@ -31,3 +31,9 @@ test("disminuir intensidad luz",()=>{
     luz.apagar();
     expect(luz.estadoActual()).toBe(0);
 });
+test("error intensidad",()=>{
+    for(i=0;i<10;i++){
+        luz.encender();
+    }
+    expect(()=>{luz.encender()}).toBe(new Error("La intensidad no puede ser mayor que 10"));
+});
