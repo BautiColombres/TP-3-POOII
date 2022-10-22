@@ -9,7 +9,15 @@ function Cartel(){
         }
     }
     this.cuantasEncendidas=function(){
-        return 0;
+        var contador=0;
+        for(var i=0;i<100;i++){
+            for(var j=0;j<100;j++){
+                if(this.matriz[i][j].estadoActual()=="encendida"){
+                    contador++;
+                }
+            }
+        }
+        return contador;
     }
     this.encenderLuces=function(inicial,final){
         for(var i=inicial[0];i<=final[0];i++){
