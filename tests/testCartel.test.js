@@ -32,4 +32,5 @@ test("encender posiciones deseadas",()=>{
         aux=true;
     }
     expect(aux).toBe(true);
+    expect(cartel.encenderLuces([5,8],[2,1])).toThrow(new Error("La posicion inicial es mayor que la final"));
 });
