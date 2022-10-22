@@ -45,12 +45,8 @@ function Cartel(){
         }
         for(var i=inicial[0];i<=final[0];i++){
             for(var j=inicial[1];j<=final[1];j++){
-                if(this.matriz[i][j].estadoActual()==0){
-                    this.matriz[i][j].encender();
-                }
-                else if(this.matriz[i][j].estadoActual()==1){
-                    this.matriz[i][j].apagar();
-                }
+                this.matriz[i][j].encender();
+                this.matriz[i][j].encender();
             }
         }
     }
