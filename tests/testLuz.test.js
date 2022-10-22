@@ -5,7 +5,7 @@ beforeEach(function () {
     luz=new Luz();
 });
 test("crear luz apagada",()=>{
-    expect(luz.estadoActual()).toBe("apagada");
+    expect(luz.estadoActual()).toBe(0);
 });
 test("encender luz",()=>{
     luz.encender();
