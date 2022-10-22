@@ -29,6 +29,9 @@ function Cartel(){
             }
         }
     }
+    this.apagarLuces=function(){
+        
+    }
 }
 
 module.exports = Cartel;
