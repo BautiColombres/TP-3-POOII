@@ -24,3 +24,10 @@ test("aumentar intensidad luz",()=>{
     luz.encender();
     expect(luz.estadoActual()).toBe(2);
 });
+test("disminuir intensidad luz",()=>{
+    luz.encender();
+    luz.encender();
+    luz.apagar();
+    luz.apagar();
+    expect(luz.estadoActual()).toBe(0);
+});
