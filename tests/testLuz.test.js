@@ -1,7 +1,6 @@
 const Luz= require('./../Luz');
 
 var luz;
-var x="parte 2";
 beforeEach(function () {
     luz=new Luz();
 });
