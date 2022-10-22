@@ -9,7 +9,7 @@ function Cartel(){
         }
     }
     this.cuantasEncendidas=function(){
-        
+        return 0;
     }
 }
 
