@@ -46,3 +46,13 @@ test("cuantas luces hay encendidas teniendo en cuenta la intensidad",()=>{
     cartel.encenderLuces([0,0],[2,2]);
     expect(cartel.cuantasEncendidas()).toBe(9);
 });
+test("error intensidad",()=>{
+    for(i=0;i<10;i++){
+        cartel.encenderLuces([0,0],[2,2]);
+    }
+    expect(()=>{cartel.encenderLuces([0,0],[2,2])}).toThrow(new Error("La intensidad no puede ser mayor que 10"));
+    for(i=0;i<10;i++){
+        cartel.apagarLuces([0,0],[2,2]);
+    }
+    expect(()=>{cartel.apagarLuces([0,0],[2,2])}).toThrow(new Error("La intensidad no puede ser menor que 0"));
+});
