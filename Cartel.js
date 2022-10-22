@@ -11,7 +11,12 @@ function Cartel(){
     this.cuantasEncendidas=function(){
         return 0;
     }
-    this.encenderLuces=function(){
+    this.encenderLuces=function(inicial,final){
+        for(var i=inicial[0];i<=final[0];i++){
+            for(var j=inicial[1];j<=final[1];j++){
+              this.matriz[i][j].encender();
+            }
+        }
     }
 }
 

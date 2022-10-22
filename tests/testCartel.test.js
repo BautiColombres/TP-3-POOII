@@ -26,7 +26,7 @@ test("cuantas luces hay encendidas",()=>{
     expect(cartel.cuantasEncendidas()).toBe(0);
 });
 test("encender posiciones deseadas",()=>{
-    cartel.encenderLuces();
+    cartel.encenderLuces([2,1],[5,8]);
     var aux=false;
     if(cartel.cuantasEncendidas()>0){
         aux=true;
