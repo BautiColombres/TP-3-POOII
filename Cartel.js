@@ -1,5 +1,5 @@
 function Cartel(){
-    this.matriz;
+    this.matriz=[];
 
 }
 
