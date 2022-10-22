@@ -1,8 +1,11 @@
 const Cartel= require('./../Cartel');
 const Luz= require('./../Luz');
 
+var cartel;
+beforeEach(function () {
+    cartel=new Cartel();
+});
 test("crear cartel",()=>{
-    const cartel=new Cartel();
     var contadorColumnas=0;
     var contadorLuces=0;
     for(var fila=0;fila<100;fila++){
@@ -20,6 +23,5 @@ test("crear cartel",()=>{
     expect(contadorLuces).toBe(10000);
 });
 test("cuantas luces hay encendidas",()=>{
-    const cartel=new Cartel();
     expect(cartel.cuantasEncendidas()).toBe(0);
 });
