@@ -8,6 +8,9 @@ function Cartel(){
             this.matriz[i][j]=new Luz();
         }
     }
+    this.cuantasEncendidas=function(){
+        
+    }
 }
 
 module.exports = Cartel;
