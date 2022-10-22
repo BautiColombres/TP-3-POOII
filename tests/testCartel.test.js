@@ -25,3 +25,11 @@ test("crear cartel",()=>{
 test("cuantas luces hay encendidas",()=>{
     expect(cartel.cuantasEncendidas()).toBe(0);
 });
+test("encender posiciones deseadas",()=>{
+    cartel.encenderLuces();
+    var aux=false;
+    if(cartel.cuantasEncendidas()>0){
+        aux=true;
+    }
+    expect(aux).toBe(true);
+});
