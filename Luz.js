@@ -1,12 +1,7 @@
 function Luz(){
     this.estado=0;
     this.estadoActual=function(){
-        if(this.estado==0){
-            return "apagada";
-        }
-        else if(this.estado==1){
-            return "encendida";
-        }
+        return this.estado;
     }
     this.encender=function(){
         if (this.estado==0){
