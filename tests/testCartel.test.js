@@ -34,4 +34,5 @@ test("apagar posiciones deseadas",()=>{
     cartel.encenderLuces([2,1],[5,8]);
     cartel.apagarLuces([2,1],[5,8]);
     expect(cartel.cuantasEncendidas()).toBe(0);
+    expect(()=>{cartel.apagarLuces([5,8],[2,1])}).toThrow(new Error("La posicion inicial es mayor que la final"));
 });
