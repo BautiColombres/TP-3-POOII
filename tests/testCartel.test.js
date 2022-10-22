@@ -36,3 +36,7 @@ test("apagar posiciones deseadas",()=>{
     expect(cartel.cuantasEncendidas()).toBe(0);
     expect(()=>{cartel.apagarLuces([5,8],[2,1])}).toThrow(new Error("La posicion inicial es mayor que la final"));
 });
+test("alternar posiciones deseadas",()=>{
+    cartel.cambiarLuces([0,0],[2,2]);
+    expect(cartel.cuantasEncendidas()).toBe(9);
+});
