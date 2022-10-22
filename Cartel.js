@@ -40,6 +40,9 @@ function Cartel(){
         }
     }
     this.cambiarLuces=function(inicial,final){
+        if(inicial[0]>final[0] || inicial[1]>final[1]){
+            throw new Error("La posicion inicial es mayor que la final");
+        }
         for(var i=inicial[0];i<=final[0];i++){
             for(var j=inicial[1];j<=final[1];j++){
                 if(this.matriz[i][j].estadoActual()=="apagada"){
