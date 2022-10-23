@@ -56,3 +56,8 @@ test("error intensidad",()=>{
     }
     expect(()=>{cartel.apagarLuces([0,0],[2,2])}).toThrow(new Error("La intensidad no puede ser menor que 0"));
 });
+test("error de parametros",()=>{
+    expect(()=>{cartel.encenderLuces([0,200],[2,2])}).toThrow(new Error("Parametros erroneos"));
+    expect(()=>{cartel.apagarLuces([0,-1],[2,2])}).toThrow(new Error("Parametros erroneos"));
+    expect(()=>{cartel.cambiarLuces([0,500],[2,2])}).toThrow(new Error("Parametros erroneos"));
+});
