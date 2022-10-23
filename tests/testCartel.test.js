@@ -43,3 +43,8 @@ test("alternar posiciones deseadas",()=>{
     expect(cartel.cuantasEncendidas()).toBe(0);
     expect(()=>{cartel.cambiarLuces([5,8],[2,1])}).toThrow(new Error("La posicion inicial es mayor que la final"));
 });
+test("error de parametros",()=>{
+    expect(()=>{cartel.encenderLuces([0,200],[2,2])}).toThrow(new Error("Parametros erroneos"));
+    expect(()=>{cartel.apagarLuces([0,-1],[2,2])}).toThrow(new Error("Parametros erroneos"));
+    expect(()=>{cartel.cambiarLuces([0,500],[2,2])}).toThrow(new Error("Parametros erroneos"));
+});
