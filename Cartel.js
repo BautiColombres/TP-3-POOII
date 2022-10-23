@@ -21,7 +21,7 @@ function Cartel(){
     }
     this.encenderLuces=function(inicial,final){
         if(inicial[0]>99 || inicial[0]<0 || inicial[1]>99 || inicial[1]<0 || final[0]>99 || final[0]<0 || final[1]>99 || final[1]<0){
-            throw new Error("La posicion inicial es mayor que la final");
+            throw new Error("Parametros erroneos");
         }
         if(inicial[0]>final[0] || inicial[1]>final[1]){
             throw new Error("La posicion inicial es mayor que la final");
